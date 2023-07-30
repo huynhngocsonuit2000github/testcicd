@@ -23,6 +23,6 @@ WORKDIR /publish
 # copy /publish directory from the build-env stage into the runtime image 
 COPY --from=build-env /publish .
 
-EXPOSE 80
+# EXPOSE 80
 
 ENTRYPOINT ["dotnet", "myWebApp.dll"]
